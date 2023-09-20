@@ -4,16 +4,17 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{E8268DF2-184A-4D1F-A6D5-1C4DFC5CFA90}</ProjectGuid>
-    <OutputType>Library</OutputType>
-    <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Tyuiu.DolgushinVA.Sprint1.Task0.V27.Lib</RootNamespace>
-    <AssemblyName>Tyuiu.DolgushinVA.Sprint1.Task0.V27.Lib</AssemblyName>
+    <ProjectGuid>{437CFECF-E10C-4CDD-A478-B687ADC957C2}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>Tyuiu.DolgushinVA.Sprint1.Task2.V13</RootNamespace>
+    <AssemblyName>Tyuiu.DolgushinVA.Sprint1.Task2.V13</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -23,6 +24,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -39,14 +41,19 @@
     <Reference Include="System.Data" />
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Xml" />
-    <Reference Include="tyuiu.cources.programming.interfaces, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\tyuiu.cources.programming.interfaces.dll</HintPath>
-    </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DataService.cs" />
+    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Tyuiu.DolgushinVA.Sprint1.Task2.V13.Lib\Tyuiu.DolgushinVA.Sprint1.Task2.V13.Lib.csproj">
+      <Project>{3598e10d-e6ce-4c3c-ad0b-06cb1fcc24e5}</Project>
+      <Name>Tyuiu.DolgushinVA.Sprint1.Task2.V13.Lib</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
