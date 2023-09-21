@@ -5,13 +5,13 @@ using System.Text;
 using System.Threading.Tasks;
 
 using tyuiu.cources.programming.interfaces.Sprint1;
-namespace Tyuiu.DolgushinVA.Sprint1.Task2.V13.Lib
+namespace Tyuiu.DolgushinVA.Sprint1.Task3.V1.Lib
 {
-    public class DataService : ISprint1Task2V13
+    public class DataService : ISprint1Task3V1
     {
-        public double ConvertMilesToKm(int value)
+        public double CylinderVolume(double r, double h)
         {
-            return value * 1.609;
+            return r * r * h * Math.Round(Math.PI, 3);
         }
     }
 }
