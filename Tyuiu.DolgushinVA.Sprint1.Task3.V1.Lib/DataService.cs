@@ -11,7 +11,7 @@ namespace Tyuiu.DolgushinVA.Sprint1.Task3.V1.Lib
     {
         public double CylinderVolume(double r, double h)
         {
-            return r * r * h * Math.Round(Math.PI, 3);
+            return r * r * h * Math.Round(Math.PI, 2);
         }
     }
 }
