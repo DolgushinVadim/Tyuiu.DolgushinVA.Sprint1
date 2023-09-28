@@ -14,7 +14,7 @@ namespace Tyuiu.DolgushinVA.Sprint1.Task7.V10.Test
             double x = 5;
             double wait = -1.95;
             var res = ds.Calculate (x);
-            Assert.AreEqual(wait, res);
+            Assert.AreEqual(wait, res); 
         }
     }
 }

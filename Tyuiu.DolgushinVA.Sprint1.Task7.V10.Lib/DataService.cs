@@ -11,7 +11,7 @@ namespace Tyuiu.DolgushinVA.Sprint1.Task7.V10.Lib
     {
         public double Calculate(double x)
         {
-            var z = Math.Round((2 * (Math.Cos(3 * x) / Math.Sin(3 * x)) - (Math.Log(Math.Cos(x)) / Math.Log(1 + Math.Pow(x,2)))), 3);
+            var z = Math.Round((2 * (Math.Cos(3 * x) / Math.Sin(3 * x)) - (Math.Log(Math.Cos(x)) / Math.Log(1 + Math.Pow(x,2)))), 3); 
             return z;
         }
     }

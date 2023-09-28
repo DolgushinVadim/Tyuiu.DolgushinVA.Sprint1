@@ -36,7 +36,7 @@ namespace Tyuiu.DolgushinVA.Sprint1.Task7.V10
             Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
             Console.WriteLine("***************************************************************************");
 
-            Console.WriteLine("2 * ctg(3 * x) - ln cos x / ln(1 + x^2) = " + ds.Calculate(x));
+            Console.WriteLine("2 * ctg(3 * x) - ln cos x / ln(1 + x^2) = " + ds.Calculate(x)); 
             Console.ReadLine();
         }
     }
